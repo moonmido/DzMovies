@@ -18,7 +18,7 @@ export default function App() {
 
   return (
 <NavigationContainer>
-<Stack.Navigator initialRouteName='signin'>
+<Stack.Navigator initialRouteName='Adapter'>
 <Stack.Screen name='notification' component={Notification} options={{headerShown:false}}/>
 <Stack.Screen name='watch' component={Watch_movie} options={{headerShown:false}}/>
 <Stack.Screen name='home' component={Home} options={{headerShown:false}}/>

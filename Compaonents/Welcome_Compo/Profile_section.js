@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import profile from '../../Images/profile.png'
 import { Dimensions } from 'react-native';
+import Entypo from '@expo/vector-icons/Entypo';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import { auth, db, createUserWithEmailAndPassword, setDoc, doc,signInWithEmailAndPassword ,collection, onSnapshot,getFirestore } from '../../Firebase/FirebaseConfig'
@@ -49,7 +50,7 @@ const [userPIC,setUserPIC] = useState(null);
     </View>
      <View style={{marginLeft:width*0.1}}>
      <TouchableWithoutFeedback onPress={()=>navigation.navigate("notification")}>
-     <Text><Ionicons name="notifications-outline" size={24} color="white"/></Text>  
+     <Text><Entypo name="list" size={24} color="white" /></Text>  
      </TouchableWithoutFeedback>
      </View>
     </View>

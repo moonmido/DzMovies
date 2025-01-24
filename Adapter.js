@@ -11,7 +11,7 @@ const [issplash,setIssplash] = useState(true);
 useEffect(()=>{
     setTimeout(()=>{
 setIssplash(false);
-    },2000)
+    },1500)
 })
 
 
